@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-
+using DG.Tweening;
 public class Attractor : MonoBehaviour
 {
     private Collider ownCollider;
@@ -11,7 +11,6 @@ public class Attractor : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log("col" +ownCollider.bounds.max.y); 
         if(ownCollider.enabled)
         {
             GameObject[] objects = GameObject.FindGameObjectsWithTag("Eatable");
@@ -25,5 +24,6 @@ public class Attractor : MonoBehaviour
                 }
             }
         }
+      
     }
 }
