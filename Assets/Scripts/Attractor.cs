@@ -23,7 +23,8 @@ public class Attractor : MonoBehaviour
                     o.GetComponent<Rigidbody>().AddForce(10 * objectToBlackhole, ForceMode.Force);
                 }
             }
+            }
         }
       
     }
-}
+

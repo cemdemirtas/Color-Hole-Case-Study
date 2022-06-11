@@ -19,6 +19,9 @@ public class Finish : MonoBehaviour
             if (!IsTargetOver)
             {
                 EffectController.instance.FinishEffect();
+                //Singleton
+                //When we obtain whole white object, show next level panel
+                GameManager.Instance.gamestate = GameManager.GameState.Next;
             }
         }
     }

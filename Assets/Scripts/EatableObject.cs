@@ -49,7 +49,7 @@ public class EatableObject : MonoBehaviour
     {
         //Level.IsGameOver = true;
         Debug.Log("error");
-        GameObject.Find("BlackholeParent").GetComponent<TouchMove>().enabled = false;
+        GameObject.Find("Absorber").GetComponent<TouchMove>().enabled = false;
         GameObject.Find("Blackhole").GetComponent<Collider>().enabled = false;
     }
 }
